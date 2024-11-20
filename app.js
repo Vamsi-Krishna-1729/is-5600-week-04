@@ -24,3 +24,4 @@ app.delete("/products/:id", api.deleteProduct);
 app.put("/products/:id", api.editProduct); 
 // Boot the server
 app.listen(port, () => console.log(`Server listening on port ${port}`))
+

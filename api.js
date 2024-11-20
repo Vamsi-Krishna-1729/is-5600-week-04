@@ -50,14 +50,14 @@ async function createProduct (req, res) {
 async function editProduct(req, res, next) {
   const { id } = req.params;
   const updatedData = req.body;
-  console.log(`Product ${id} updated with data:, updatedData`);
+  console.log(`Product ${id} updated with data:`, updatedData);
   res.status(200).json({ success: true, message: `Product ${id} updated` });
 }
 
 async function deleteProduct(req, res, next) {
   const { id } = req.params;
   console.log(`Product ${id} deleted`);
-  res.status(202).json({ success: true, message: `Product ${id} deleted `});
+  res.status(202).json({ success: true, message: `Product ${id} deleted` });
 }
 
 module.exports = autoCatch({

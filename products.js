@@ -30,7 +30,7 @@ async function list (options = {}) {
     return null;
 }
 async function update(id, data) {
-  console.log(`Product ${id} would be updated with:, data`);
+  console.log(`Product ${id} would be updated with:`, data);
   return true; // Placeholder response
 }
 
